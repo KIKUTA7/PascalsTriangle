@@ -4,7 +4,7 @@ class Pascal extends MiniJava {
     // Function for computing the first n rows of Pascal's triangle.
     public static int[][] pascal(int n) {
 
-int b [][] = new int [n][n];
+int [][] b  = new int [n][n];
 for (int i=0; i<n;i++)
 {
     b[i][0] =1;
@@ -28,7 +28,7 @@ return b;
            {  writeConsole(a[k][j]);
            writeConsole("\t");}
            i++;
-           write("");
+          if(k!=n-1) write("");
        }
 
 
