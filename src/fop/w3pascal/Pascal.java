@@ -5,10 +5,7 @@ class Pascal extends MiniJava {
     public static int[][] pascal(int n) {
 
 int b [][] = new int [n][n];
-b[0][0]=1;
-b[1][0]=1;
-b[1][1]=1;
-for (int i=2; i<n;i++)
+for (int i=0; i<n;i++)
 {
     b[i][0] =1;
     b[i][i] = 1;
