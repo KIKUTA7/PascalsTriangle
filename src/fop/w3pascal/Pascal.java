@@ -24,9 +24,12 @@ return b;
        int i=1;
        for (int k=0;k<n;k++)
        {
-           writeConsole("n="+k+"    ");
+           writeConsole("n=");
+           writeConsole(k);
+           writeConsole("\t   ");
            for(int j=0;j<i;j++)
-           {  writeConsole(a[k][j] + "   ");}
+           {  writeConsole(a[k][j]);
+           writeConsole("\t");}
            i++;
            write("");
        }
