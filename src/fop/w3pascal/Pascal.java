@@ -23,12 +23,12 @@ class Pascal extends MiniJava {
             writeConsole("n=");
             writeConsole(k);
             writeConsole("\t");
-            for (int j = 0; j < i; j++) {
+            for (int j = 0; j < k+1; j++) {
                 writeConsole(a[k][j]);
-                if (j != i - 1) writeConsole("\t");
+                if (j != k) writeConsole("\t");
                 else writeConsole("\n");
             }
-            i++;
+            
         }
 
 
