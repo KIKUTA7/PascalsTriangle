@@ -17,7 +17,7 @@ return b;
 
     public static void main(String[] args) {
 
-       int n=read("Please insert number of rows:[");
+       int n=read("Please insert number of rows:");
               int [][] a = pascal(n);
        int i=1;
        for (int k=0;k<n;k++)
@@ -27,7 +27,7 @@ return b;
            writeConsole("\t");
            for(int j=0;j<i;j++)
            {  writeConsole(a[k][j]);
-            writeConsole("\t");}
+           if(j!=i-1) writeConsole("\t");}
            i++;
           if(k!=n-1) write("");
 
