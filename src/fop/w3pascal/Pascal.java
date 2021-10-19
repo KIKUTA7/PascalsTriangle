@@ -26,7 +26,7 @@ return b;
            writeConsole("\t");
            for(int j=0;j<i;j++)
            {  writeConsole(a[k][j]);
-           if(j!=i-1) writeConsole("\t");}
+            writeConsole("\t");}
            i++;
           if(k!=n-1) write("");
 
