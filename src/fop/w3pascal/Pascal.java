@@ -6,6 +6,7 @@ class Pascal extends MiniJava {
 
         int[][] b = new int[n][n];
         for (int i = 0; i < n; i++) {
+            b[i] = new int[i+1];
             b[i][0] = 1;
             b[i][i] = 1;
             for (int j = 1; j < i; j++)
@@ -19,12 +20,7 @@ class Pascal extends MiniJava {
         int n = read("Please insert number of rows:");
         int[][] a = pascal(n);
         int i = 1;
-        if (n>0){
-            writeConsole("n=0");
-            writeConsole("\t");
-            write("1");
-        }
-        for (int k = 1; k < n; k++) {
+        for (int k = 0; k < n; k++) {
             writeConsole("n=");
             writeConsole(k);
             for (int j = 0; j < k+1; j++) {
