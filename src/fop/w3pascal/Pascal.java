@@ -17,7 +17,7 @@ return b;
 
     public static void main(String[] args) {
 
-       int n=read("Please insert number of rows: ");
+       int n=read("Please insert number of rows:[");
               int [][] a = pascal(n);
        int i=1;
        for (int k=0;k<n;k++)
